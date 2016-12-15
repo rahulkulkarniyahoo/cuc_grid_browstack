@@ -31,6 +31,7 @@ public class TestChromeOnGrid {
 		driver.get("http://www.google.com");
 		//driver.getTitle();
 		Thread.sleep(5000);
+		System.out.println("Hello World");
 		System.out.println(driver.getTitle());
 		driver.quit();
 	}

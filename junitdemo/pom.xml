@@ -45,9 +45,6 @@
 			<artifactId>serenity-junit</artifactId>
 			<version>1.2.1-rc.6</version>
 		</dependency>
-
 	</dependencies>
-
-
 
 </project>
