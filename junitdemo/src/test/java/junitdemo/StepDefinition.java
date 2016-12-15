@@ -16,7 +16,7 @@ import cucumber.api.java.en.Then;
 
 public class StepDefinition {
 	
-/*	WebDriver driver;
+	WebDriver driver;
 
 	@Given("^I go to YouTube Page$")
 	public void i_go_to_YouTube_Page() throws Throwable {
@@ -30,11 +30,11 @@ public class StepDefinition {
 	public void i_should_be_on_YouTube_Page() throws Throwable {
 		Assert.assertTrue(driver.getTitle().contains("YouTube"));
 		driver.quit();
-	}*/
+	}
 	
 	  
 	
-	  public static final String USERNAME = "rahulkulkarni1";
+	 /* public static final String USERNAME = "rahulkulkarni1";
 	  public static final String AUTOMATE_KEY = "UM87iniPkMqbiZ1SaTJ8";
 	  public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
@@ -50,8 +50,8 @@ public class StepDefinition {
 
 	@Given("^I go to YouTube Page$")
 	public void i_go_to_YouTube_Page() throws Throwable {
-		/*System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");	
-		driver = new ChromeDriver();*/
+		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");	
+		driver = new ChromeDriver();
 		caps =  DesiredCapabilities.firefox();
 		  System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver");
 		  caps.setPlatform(Platform.MAC);
@@ -66,5 +66,5 @@ public class StepDefinition {
 		Assert.assertTrue(driver.getTitle().contains("YouTube"));
 		driver.quit();
 	}
-
+*/
 }
