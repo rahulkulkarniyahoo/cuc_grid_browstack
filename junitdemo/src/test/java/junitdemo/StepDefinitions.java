@@ -32,14 +32,14 @@ public class StepDefinitions {
 	public void i_go_to_YouTube_Page() throws Throwable {
 		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");	
 		driver = new ChromeDriver();
-		driver.navigate().to("http://www.youtube.com");
+		driver.navigate().to("http://www.yahoo.com");
 			
 	}
 
 	@Then("^I should be on YouTube Page$")
 	public void i_should_be_on_YouTube_Page() throws Throwable {
 		System.out.println("Hello Me");
-		Assert.assertTrue(driver.getTitle().contains("YouTube"));
+		Assert.assertTrue(driver.getTitle().contains("Yahoo"));
 		driver.quit();
 	}
 }
